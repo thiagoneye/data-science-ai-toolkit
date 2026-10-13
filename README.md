@@ -19,8 +19,7 @@ Repositório de **MCPs, regras e skills** para **OpenAI Codex no VS Code**, com 
 2. Verifique se o agente consegue ler `AGENTS.md` e descobrir as skills em `.agents/skills/`.
 3. Personalize as regras aplicáveis ao projeto: leia `rules/README.md`.
 4. **Não copie a configuração MCP inteira sem revisar.** Consulte `mcp/README.md`, substitua os caminhos e habilite somente os servidores desejados.
-5. Execute `python scripts/validate_repository.py`.
-6. Experimente: `Use a skill dataset-profiling para inspecionar data/sample.parquet, sem modificar os dados brutos.`
+5. Experimente: `Use a skill dataset-profiling para inspecionar data/sample.parquet, sem modificar os dados brutos.`
 
 > O arquivo `.codex/config.toml.example` **não** é carregado automaticamente: é um template. Para ativá-lo, copie as seções desejadas para `~/.codex/config.toml` ou para `.codex/config.toml` de um projeto confiável. O VS Code e a CLI do Codex compartilham a configuração.
 
@@ -37,7 +36,6 @@ Repositório de **MCPs, regras e skills** para **OpenAI Codex no VS Code**, com 
 | `model-training` | treinamento reproduzível e checkpoints |
 | `model-evaluation` | avaliação, erros e incerteza |
 | `scientific-ml-modeling` | plano de surrogate / SciML |
-| `cfd-data-processing` | extração e validação de OpenFOAM |
 | `scientific-literature-review` | revisão com referências verificáveis |
 | `reproducibility-audit` | auditoria de seeds, dependências e dados |
 
