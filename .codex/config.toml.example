@@ -1,0 +1,22 @@
+# MCP template for Codex CLI and VS Code extension.
+# Copy ONLY reviewed sections to ~/.codex/config.toml or a trusted project's .codex/config.toml.
+# Uncomment / adjust optional integrations. Never store access tokens here.
+
+[mcp_servers.openaiDeveloperDocs]
+url = "https://developers.openai.com/mcp"
+
+# Optional: restrict to a specific permitted directory, not your entire home folder.
+# [mcp_servers.filesystem]
+# command = "npx"
+# args = ["-y", "@modelcontextprotocol/server-filesystem", "/absolute/path/to/approved/project"]
+
+# Optional: third-party documentation lookup.
+# [mcp_servers.context7]
+# command = "npx"
+# args = ["-y", "@upstash/context7-mcp"]
+
+# Optional: GitHub local server via Docker; see the GitHub MCP README for latest flags/auth.
+# [mcp_servers.github]
+# command = "docker"
+# args = ["run", "-i", "--rm", "-e", "GITHUB_PERSONAL_ACCESS_TOKEN", "ghcr.io/github/github-mcp-server"]
+# env_vars = ["GITHUB_PERSONAL_ACCESS_TOKEN"]
